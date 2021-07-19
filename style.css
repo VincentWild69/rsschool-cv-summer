@@ -1,0 +1,48 @@
+/*Default styles begin*/
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #fff;
+}
+
+ul, li {
+display: block;
+padding: 0;
+margin: 0;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  outline:none;
+  cursor:pointer;
+}
+
+img {
+  display: block;
+}
+/*Default styles end*/
+
+h1 {
+  color: green;
+}
