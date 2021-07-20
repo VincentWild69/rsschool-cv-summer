@@ -97,7 +97,7 @@ header {
 h1 {
   position: relative;
   margin-bottom: 3.5rem;
-  font-size: 5rem;
+  font-size: 4.5rem;
   color: #141814;
 }
 
@@ -107,7 +107,7 @@ h1::after {
   width: 9rem;
   height: 0.5rem;
   top: 120%;
-  left: 40%;
+  left: 39%;
   background-color: #f7a23b;
 }
 
@@ -116,7 +116,7 @@ h1::after {
 }
 
 .title-name {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .avatar {
@@ -128,7 +128,7 @@ h1::after {
 }
 
 p {
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 
 .main-block {
@@ -138,7 +138,7 @@ p {
 }
 
 aside {
-  width: 28%;
+  width: 29%;
   background-color: #fd9744;
 }
 
@@ -149,33 +149,141 @@ main {
 }
 
 .education {
-  padding: 1.5rem;
+  padding: 1.5rem 1.5rem 1.5rem 2.7rem;
 }
 
 .contact {
-  padding: 1.5rem;
-  background-color: #f3f2f2;
+  padding: 1.5rem 1.5rem 1.5rem 2.7rem;
+  background-color: #dfdfdf;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.contact-item {
+h2 {
+  position: relative;
+  margin-bottom: 4rem;
   font-size: 2rem;
+  font-weight: 700;
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  width: 4rem;
+  height: 0.2rem;
+  top: 145%;
+  left: 0%;
+  background-color: #000000;
+}
+
+.education-item {
+  margin: 2rem 0 2rem 0;
+}
+
+.education-year {
+  font-size: 1.5rem;
   font-weight: 400;
 }
 
+.education-institution {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.education-proffesion {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.contact-info a {
+  color: #ca5e05;
+}
+
+.contact-item {
+  margin: 2rem 0 2rem 0;
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
 .contact-detail {
-  font-size: 1rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.edu-margin {
+  margin-bottom: 0.3rem;
+}
+
+
+
+
+
+
+footer {
+  margin: 0 1rem 1rem 1rem;
+  background-color: #f0e9d6;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.links {
+  display: flex;
+  align-content: center;
+  justify-content: flex-start;
+}
+
+.links a {
+  color: #000;
+}
+
+.git {
+  margin: 1rem 3rem 1rem 10rem;
+  padding: 0.5rem;
+  border-radius: 10%;
+  transition: 0.7s ease;
+}
+
+.git:hover {
+  background-color: #f0a466;
+  transition: 0.7s ease;
+}
+
+.git p {
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.git-footer-icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+.rss {
+  margin: 1rem 3rem 1rem 3rem;
+  padding: 0.5rem;
+  border-radius: 10%;
+  transition: 0.7s ease;
+}
+
+.rss:hover {
+  background-color: #f0a466;
+  transition: 0.7s ease;
+}
+
+.rss p {
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.rss-footer-icon {
+  width: 6rem;
+  height: 3.5rem;
+}
+
+.year {
+  margin: 3.5rem 15rem 2rem 3rem;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
