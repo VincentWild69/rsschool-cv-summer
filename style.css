@@ -77,16 +77,21 @@ img {
   }
 }
 
-/* .header-container {
-  padding-top: 6rem;
-}
- */
 header {
   display: flex;
   align-items: center;
   justify-content: space-around;
   background-color: #ffffff;
   padding-top: 4rem;
+  padding-bottom: 4rem;
+  margin: 0 1rem 1rem 1rem;
+}
+
+@media screen and (max-width: 767px) {
+  header {
+      padding-right: 20px;
+      padding-left: 20px;
+  }
 }
 
 h1 {
@@ -112,5 +117,65 @@ h1::after {
 
 .title-name {
   font-size: 2.5rem;
-  
+}
+
+.avatar {
+  margin: 5px;
+}
+
+.avatar__img {
+  width: 100%;
+}
+
+p {
+  font-size: 2rem;
+}
+
+.main-block {
+  margin: 0 1rem 1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+aside {
+  width: 28%;
+  background-color: #fd9744;
+}
+
+main {
+  padding: 1.5rem;
+  width: 70%;
+  background-color: #fff;
+}
+
+.education {
+  padding: 1.5rem;
+}
+
+.contact {
+  padding: 1.5rem;
+  background-color: #f3f2f2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact-item {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.contact-detail {
+  font-size: 1rem;
 }
