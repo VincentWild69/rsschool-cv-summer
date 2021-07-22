@@ -19,12 +19,7 @@ html {
 body {
   margin: 0;
   background-color: #ffedcb;
-}
-
-ul, li {
-display: block;
-padding: 0;
-margin: 0;
+  font-size: 1.6rem;
 }
 
 h1, h2, h3, h4, p {
@@ -77,6 +72,7 @@ img {
   }
 }
 
+/*HEADER START*/
 header {
   display: flex;
   align-items: center;
@@ -87,10 +83,16 @@ header {
   margin: 0 1rem 1rem 1rem;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 900px) {
   header {
       padding-right: 20px;
       padding-left: 20px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  header {
+      flex-wrap: wrap;
   }
 }
 
@@ -120,16 +122,18 @@ h1::after {
 }
 
 .avatar {
-  margin: 5px;
+  margin: 20px;
+  width: 36rem;
+  height: 31.4rem;
 }
 
 .avatar__img {
-  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 2%;
+  border: solid 5px #e4a144;
 }
-
-p {
-  font-size: 1.7rem;
-}
+/*HEADER END*/
 
 .main-block {
   margin: 0 1rem 1rem 1rem;
@@ -137,9 +141,11 @@ p {
   justify-content: space-between;
 }
 
+/*ASIDE START*/
 aside {
   width: 29%;
-  background-color: #fd9744;
+  height: 100%;
+  background-color: rgb(248, 180, 125);
 }
 
 main {
@@ -154,17 +160,17 @@ main {
 
 .contact {
   padding: 1.5rem 1.5rem 1.5rem 2.7rem;
-  background-color: #dfdfdf;
+  background-color: #faf6eb;
 }
 
-h2 {
+aside h2 {
   position: relative;
   margin-bottom: 4rem;
   font-size: 2rem;
   font-weight: 700;
 }
 
-h2::after {
+aside h2::after {
   content: '';
   position: absolute;
   width: 4rem;
@@ -212,12 +218,89 @@ h2::after {
 .edu-margin {
   margin-bottom: 0.3rem;
 }
+/*ASIDE END*/
 
+/*MAIN BLOCK START*/
+main section {
+  margin: 0 1rem 3rem 1rem;
+}
 
+main h2 {
+  position: relative;
+  margin-bottom: 4rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
 
+main h2::after {
+  content: '';
+  position: absolute;
+  width: 7rem;
+  height: 0.4rem;
+  top: 145%;
+  left: 0%;
+  background-color: #f7a23b;
+}
 
+.bio-p {
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+}
 
+.skill-list {
+  padding: 0;
+}
+.skill-item {
+  list-style: circle inside;
+  margin-bottom: 1rem;
+}
 
+.skill-item-name {
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-decoration: underline #ff9900;
+}
+
+.skill-item ul {
+  margin-top: 1rem;
+}
+
+.skill-item-techno {
+  list-style: square inside;
+  margin-bottom: 1rem;
+}
+
+.skill-item-name-techno {
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-style: italic;
+}
+
+h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+.example p {
+  margin-bottom: 1rem;
+}
+
+.example pre {
+  white-space: pre-line;
+  background-color: #f3f1ec;
+  padding-left: 2rem;
+  border-radius: 1%;
+  max-width: 50rem;
+}
+
+.example code {
+  font-size: 1.4rem;
+}
+/*MAIN BLOCK END*/
+
+/*FOOTER START*/
 footer {
   margin: 0 1rem 1rem 1rem;
   background-color: #f0e9d6;
@@ -287,3 +370,4 @@ footer {
   font-size: 1.5rem;
   font-weight: 500;
 }
+/*FOOTER END*/
